@@ -186,13 +186,15 @@ p {
 
 /*   !FEATURE   */
 .feature-thumb {
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+  padding: 24px 100px;
+
+  border-radius: 4px;
+
   background-color: var(--background-sec);
   text-align: center;
-  padding: 24px 100px;
-  border-radius: 4px;
-  height: 112px;
-  width: 264px;
-  margin-bottom: 8px;
 }
 .feature-icon {
   width: 64px;
@@ -202,9 +204,7 @@ p {
   display: flex;
   gap: 24px;
 }
-.feature-item {
-  width: 264px;
-}
+
 .list-title {
   margin-bottom: 8px;
 
@@ -289,6 +289,9 @@ p {
 }
 
 /*   !CUSTOMERS */
+.customers.section {
+  padding-top: 130px;
+}
 .customers-list {
   display: flex;
   gap: 24px;
