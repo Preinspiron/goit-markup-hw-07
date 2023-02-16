@@ -7,6 +7,7 @@
   --footer-text: rgba(231, 233, 252, 1); /* CORNFLOWER: footeer text */
   --hover-link: rgba(64, 75, 191, 1); /* OCEAN: navigation, contacts */
   --light-slate: rgba(142, 143, 153, 1);
+  --cubic-bazier: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*   !UTILS   */
@@ -56,6 +57,8 @@ p {
 
 .current {
   color: var(--hover-link);
+  position: relative;
+  height: 100%;
 }
 .image {
   display: block;
@@ -91,20 +94,35 @@ p {
 
 .nav .list,
 .contacts .list {
-  display: inline-flex;
+  display: flex;
   gap: 40px;
 }
-
+.nav .item {
+  display: block;
+}
 .contacts .link {
   color: var(--secondary-text);
   font-weight: 400;
 }
+.current::after {
+  content: "";
+  /* display: block; */
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: -25px;
+  left: 0;
 
+  color: red;
+  background-color: #404bbf;
+}
 .nav .link:hover,
 .nav .link:focus,
 .contacts .link:hover,
 .contacts .link:focus {
-  color: var(--hover-link);
+  /* color: var(--hover-link); */
+
+  animation: links-hover 250ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 /*   !HERO   */
@@ -170,17 +188,14 @@ p {
 
 .button:hover,
 .button:focus {
-  background-color: var(--hover-link);
   color: var(--background-prime);
   border-color: transparent;
-
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  animation: buttons-hover 250ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 .button.primery:hover,
 .button.primery:focus {
-  background-color: var(--hover-link);
+  animation: buttons-hover 250ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
   cursor: pointer;
 }
 
@@ -289,7 +304,8 @@ p {
 
 .social-link:hover,
 .social-link:focus {
-  background-color: var(--hover-link);
+  animation: team-social-icons-hover 250ms forwards;
+  animation-timing-function: var(--cubic-bazier);
 }
 
 /*   !CUSTOMERS */
@@ -324,7 +340,8 @@ p {
 
 .customers-link:hover .customers-icon,
 .customers-link:focus .customers-icon {
-  fill: var(--hover-link);
+  animation: customers-icons-hover 250ms forwards;
+  animation-timing-function: var(--cubic-bazier);
 }
 /*   !PORTFOLIO */
 
@@ -353,24 +370,55 @@ p {
 .portfolio-cards {
   display: flex;
   flex-wrap: wrap;
+  /* overflow: hidden; */
+  /* position: relative; */
 }
 
 .portfolio-cards .card {
   margin-bottom: 48px;
   margin-right: 24px;
+  width: 360px;
 }
 
 .portfolio-cards .card:hover,
 .portfolio-cards .card:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  cursor: pointer;
+  animation: cards-hover 250ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
+
 .portfolio-cards .card:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
+
 .portfolio-cards .card:nth-child(3n) {
   margin-right: 0;
+}
+
+.portfolio .card:nth-child(2) .portfolio-image-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio .card:nth-child(2) .overlay {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  /* bottom: 0; */
+  background-color: var(--accent);
+  /* opacity: 0.5; */
+  background: #4d5ae5;
+  background-blend-mode: soft-light;
+  mix-blend-mode: normal;
+  padding: 40px 32px;
+  color: var(--background-sec);
+  /* z-index: 0; */
+  transform: translateY(100%);
+  transition: transform 250ms ease;
+}
+.portfolio .card:nth-child(2):hover .overlay,
+.portfolio .card:nth-child(2):hover .overlay {
+  transform: translateX(0);
 }
 
 /*   !FOOTER   */
@@ -424,7 +472,8 @@ p {
 }
 .footer-social .social-link:hover,
 .footer-social .social-link:focus {
-  background-color: #31d0aa;
+  animation: footer-social-icons-hover 250ms forwards;
+  animation-timing-function: var(--cubic-bazier);
 }
 
 .footer-social .social-list {
@@ -434,4 +483,103 @@ p {
 .footer-social .social-icon {
   width: 24px;
   height: 24px;
+}
+
+@keyframes links-hover {
+  0% {
+    /* color: currentColor; */
+  }
+  100% {
+    color: var(--accent);
+  }
+}
+
+@keyframes cards-hover {
+  0% {
+  }
+  100% {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+@keyframes buttons-hover {
+  0% {
+  }
+  100% {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    background-color: var(--hover-link);
+  }
+}
+
+@keyframes customers-icons-hover {
+  0% {
+  }
+  100% {
+    fill: var(--hover-link);
+  }
+}
+
+@keyframes footer-social-icons-hover {
+  0% {
+  }
+  100% {
+    background-color: #31d0aa;
+  }
+}
+@keyframes team-social-icons-hover {
+  0% {
+  }
+  100% {
+    background-color: var(--hover-link);
+  }
+}
+
+/* !BACKDROP */
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+  );
+
+  padding-top: 88px;
+  transition: opacity 250ms ease, visibility 250ms;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal {
+  width: 408px;
+  min-height: 576px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--background-prime);
+  padding: 24px 24px;
+  transition: transform 250ms;
+}
+
+.backdrop.is-hidden .modal {
+  transform: scale(0);
+}
+
+.btn-close {
+  display: flex;
+  padding: 0;
+  margin-left: auto;
+  background-color: transparent;
+  border-style: none;
+}
+.backdrop-close-icon {
+  width: 24px;
+  height: 24px;
+}
+.backdrop-close-icon:hover {
+  cursor: pointer;
 }
