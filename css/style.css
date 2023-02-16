@@ -322,8 +322,8 @@ p {
   border-color: var(--hover-link);
 }
 
-.customers-item:hover .customers-icon,
-.customers-item:focus .customers-icon {
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
   fill: var(--hover-link);
 }
 /*   !PORTFOLIO */
@@ -377,7 +377,7 @@ p {
 
 .footer .container {
   display: flex;
-  gap: 120px;
+  /* gap: 120px; */
 }
 
 .footer {
@@ -403,6 +403,7 @@ p {
 
 .footer-social {
   width: 208px;
+  margin-left: 120px;
 }
 .footer-social .text {
   margin-bottom: 16px;
