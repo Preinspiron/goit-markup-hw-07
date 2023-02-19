@@ -117,6 +117,11 @@ p {
   border-radius: 2px;
   background-color: #404bbf;
 }
+.current::after:hover,
+.current::after:focus {
+  background-color: var(--accent);
+}
+
 .nav .link:hover,
 .nav .link:focus,
 .contacts .link:hover,
@@ -160,7 +165,7 @@ p {
   letter-spacing: 0.04em; /* FIXME: 0.04em non fittable size in Style Guide with border-box */
   font-size: 16px;
   font-weight: 500;
-  background: var(--background-sec);
+  background-color: var(--background-sec-cloud);
   color: var(--accent);
 
   margin-right: auto;
@@ -171,7 +176,9 @@ p {
   cursor: pointer;
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button.primery {
@@ -300,7 +307,7 @@ p {
   justify-content: center;
   align-items: center;
   fill: var(--background-sec-cloud);
-  transition: background-color 250ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -326,6 +333,8 @@ p {
   align-items: center;
   width: 169px;
   height: 88px;
+  transition: border-color 250ms;
+  transition-timing-function: var(--cubic-bazier);
 }
 .customers-icon {
   width: 104px;
@@ -338,8 +347,6 @@ p {
 .customers-link:hover,
 .customers-link:focus {
   border-color: var (var(--hover-link-ocean));
-  transition: border-color 250ms;
-  transition-timing-function: var(--cubic-bazier);
 }
 
 .customers-link:hover .customers-icon,
@@ -378,9 +385,8 @@ p {
 .portfolio-cards .card {
   margin-bottom: 48px;
   margin-right: 24px;
-  width: 360px;
 
-  transition: box-shodow 250px cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-cards .card:hover,
@@ -403,24 +409,33 @@ p {
 }
 
 .portfolio .card .overlay {
-  content: "";
+  top: 0;
   position: absolute;
+  padding: 40px 32px;
   width: 100%;
   height: 100%;
-  top: 0;
+
+  color: var(--background-sec-cloud);
   background-color: var(--accent);
-  background: #4d5ae5;
   background-blend-mode: soft-light;
   mix-blend-mode: normal;
-  padding: 40px 32px;
-  color: var(--background-sec-cloud);
-  /* z-index: 0; */
+  font-weight: 400;
+  line-height: 1.5;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* font-size: 16px; */
+  /* letter-spacing: 0.02em; */
 }
 .portfolio .card:hover .overlay,
 .portfolio .card:hover .overlay {
-  transform: translateX(0);
+  transform: translateY(0);
+}
+
+.portfolio-cards .link {
+  display: inline-block;
+  text-decoration: inherit;
+  color: inherit;
+  font-weight: 500;
 }
 
 /*   !FOOTER   */
@@ -451,8 +466,12 @@ p {
 }
 
 .footer-social {
-  width: 208px;
+  /* width: 208px; */
   margin-left: 120px;
+}
+
+.footer-social-list {
+  display: flex;
 }
 .footer-social .text {
   margin-bottom: 16px;
@@ -465,8 +484,8 @@ p {
 
 .footer-social .social-link {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
 
   background-color: rgba(255, 255, 255, 0.1);
   fill: #f4f4fd;
@@ -477,7 +496,7 @@ p {
   background-color: #31d0aa;
 }
 
-.footer-social .social-list {
+.footer-social .footer-social-list {
   gap: 16px;
 }
 
@@ -551,6 +570,7 @@ p {
 .btn-close:hover,
 .btn-close:focus {
   background-color: var(--hover-link-ocean);
+  cursor: pointer;
 }
 
 .btn-close:hover .btn-close-icon,
