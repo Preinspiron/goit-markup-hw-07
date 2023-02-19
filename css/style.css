@@ -57,7 +57,7 @@ p {
 }
 
 .current {
-  color: var(--hover-link);
+  color: var(--hover-link-ocean);
   position: relative;
   height: 100%;
 }
