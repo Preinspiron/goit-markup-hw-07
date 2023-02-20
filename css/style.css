@@ -795,7 +795,6 @@ p {
 .policy-checkbox {
   position: relative;
   display: flex;
-  align-content: center;
   align-items: center;
   font-size: 12px;
   line-height: 1.33;
@@ -823,9 +822,9 @@ p {
   display: flex;
   align-items: center;
 }
-.form-checkbox {
+/* .form-checkbox {
   display: block;
-}
+} */
 .form-checkbox:checked + .policy-checkbox .policy-check {
   background-color: var(--accent);
   fill: var(--background-prime);
