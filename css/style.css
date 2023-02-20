@@ -797,7 +797,7 @@ p {
   display: flex;
   align-items: center;
   font-size: 12px;
-  line-height: 1.33;
+  /* line-height: 1.33;  */ /* Убрал так как он влияет на центровку */
   letter-spacing: 0.04em;
   color: #757575;
 
