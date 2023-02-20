@@ -730,6 +730,8 @@ p {
 }
 .item-group-policy {
   margin-bottom: 24px;
+  display: flex;
+  align-items: baseline;
 }
 .label-policy-checkbox {
   width: 18px;
@@ -799,6 +801,7 @@ p {
   /* align-content: center */
   /* align-items: center; */
 }
+
 .policy-check {
   width: 16px;
   height: 16px;
@@ -812,7 +815,10 @@ p {
   transition: background-color 250ms var(--cubic-bazier),
     fill 250ms var(--cubic-bazier), border 250ms var(--cubic-bazier);
 }
-
+.item-group-policy {
+  display: flex;
+  align-items: center;
+}
 .form-checkbox {
   display: block;
 }
