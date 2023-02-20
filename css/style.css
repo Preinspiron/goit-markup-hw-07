@@ -728,12 +728,12 @@ p {
 .modal-icon {
   fill: black;
 }
-.item-group-policy {
-  /* position: relative; */
-  margin-bottom: 24px;
+/* .item-group-policy {
+  position: relative;
+  margin-bottom: 240px;
   display: flex;
-  align-items: baseline;
-}
+  align-items: center;
+} */
 .label-policy-checkbox {
   width: 18px;
   height: 18px;
