@@ -729,6 +729,7 @@ p {
   fill: black;
 }
 .item-group-policy {
+  /* position: relative; */
   margin-bottom: 24px;
   display: flex;
   align-items: baseline;
@@ -791,10 +792,12 @@ p {
   border-color: rgba(77, 90, 229, 1);
 }
 .policy-checkbox {
+  position: relative;
   display: flex;
+  align-content: center;
   align-items: center;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.33;
   letter-spacing: 0.04em;
   color: #757575;
 
