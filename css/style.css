@@ -448,6 +448,7 @@ p {
 
 .footer .container {
   display: flex;
+  /* gap: 120px; */
 }
 
 .footer {
@@ -461,7 +462,7 @@ p {
   margin: 0 0 16px 0;
   display: inline-block;
 
-  color: var(--background-sec-cloud);
+  color: var(--background-sec);
   line-height: calc(21 / 18);
 }
 
@@ -472,12 +473,8 @@ p {
 }
 
 .footer-social {
-  /* width: 208px; */
+  width: 208px;
   margin-left: 120px;
-}
-
-.footer-social-list {
-  display: flex;
 }
 .footer-social .text {
   margin-bottom: 16px;
@@ -487,7 +484,6 @@ p {
 
   letter-spacing: 0.02em;
 }
-
 .footer-social .social-link {
   display: flex;
   /* justify-content: center; */
@@ -509,6 +505,74 @@ p {
 .footer-social .social-icon {
   width: 24px;
   height: 24px;
+}
+
+.footer-subcribe {
+  margin-left: 80px;
+}
+.footer-input-feild {
+  display: flex;
+  flex-direction: column;
+}
+.footer-form {
+  display: inline-flex;
+}
+.footer-label {
+  display: inline-block;
+
+  color: var(--background-prime);
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+.footer .email-input {
+  width: 264px;
+  padding: 8px 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2e2f42;
+  font-size: 12px;
+  line-height: 2;
+  color: var(--background-prime);
+}
+
+.subcribe-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 165px;
+  height: 40px;
+  margin-left: 24px;
+  padding: 8px 24px;
+  align-self: flex-end;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--accent);
+
+  font-weight: 500;
+  color: var(--background-prime);
+  text-align: left;
+  letter-spacing: 0.04em;
+
+  transition: background-color 250ms var(--cubic-bazier);
+}
+.subcribe-btn-icon {
+  fill: var(--background-prime);
+  /* position: absolute; */
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
+  /* right: 24px; */
+}
+
+.subcribe-btn:hover {
+  background-color: var(--hover-link-ocean);
+  cursor: pointer;
+}
+
+.email-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* !BACKDROP */
