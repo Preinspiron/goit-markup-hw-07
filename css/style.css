@@ -462,7 +462,7 @@ p {
   margin: 0 0 16px 0;
   display: inline-block;
 
-  color: var(--background-sec);
+  color: var(--background-sec-cloud);
   line-height: calc(21 / 18);
 }
 
