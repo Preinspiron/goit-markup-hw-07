@@ -380,6 +380,10 @@ img {
   align-content: center;
   margin: auto;
 }
+
+.customers-item {
+  width: 190px;
+}
 .customers-link {
   display: block;
   border: 1px solid var(--light-slate);

@@ -223,18 +223,49 @@
   /*  !CUSTOMERS */
 
   .customers-list {
-    width: 552px;
-    /* max-width: 428px; */
+    max-width: 552px;
+    /* row-gap: 72px; */
+    column-gap: 24px;
     margin-right: auto;
     margin-left: auto;
   }
+
+  .customers-item {
+    max-width: 168px;
+  }
   /* !FOOTER */
+
+  .footer .logo {
+    justify-content: flex-start;
+  }
+
+  .footer-social {
+    text-align: left;
+    align-self: flex-start;
+  }
   .footer .container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    column-gap: 24px;
     padding-right: 108px;
-    padding-left: 108px;
+    padding-left: 164px;
+  }
+  .footer-subcribe {
+    text-align: left;
+  }
+  .footer-form {
+    flex-direction: row;
+  }
+  .footer .email-input {
+    width: 264px;
+  }
+  .footer-form {
+    width: 453px;
+    /* gap: 24px; */
+  }
+  .subcribe-btn {
+    margin-left: 0;
   }
 
   /* !MOBILE-MENU */
