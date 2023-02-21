@@ -1,4 +1,4 @@
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   /* .container {
     max-width: 448px;
   }
@@ -81,12 +81,15 @@
   .team-section-list .item {
     margin-bottom: 72px;
   }
+  .team.section {
+    padding-bottom: 128px;
+  }
 
   /*    !CUSTOMERS */
-  .customers-list {
-    max-width: 428px;
-    margin-right: auto;
-    margin-left: auto;
+
+  .customers.section {
+    padding-top: 96px;
+    /* padding-bottom: 96px; */
   }
 
   /*  !FOOTER */
