@@ -457,7 +457,13 @@ p {
 
   background-color: var(--prime-text);
 }
-
+.footer-text {
+  display: inline-block;
+  color: var(--background-prime);
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
 .footer .logo {
   margin: 0 0 16px 0;
   display: inline-block;
