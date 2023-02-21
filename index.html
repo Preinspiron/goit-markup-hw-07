@@ -56,9 +56,19 @@
           </ul>
         </address>
       </div>
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg width="24" height="24">
+          <use href="./images/icons.svg#icon-body-menu"></use>
+        </svg>
+      </button>
     </header>
     <main>
       <!-- !HERO -->
+
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
@@ -68,6 +78,7 @@
         </div>
       </section>
       <!-- !FEATURE -->
+
       <section class="section">
         <div class="container">
           <h2 hidden>Our features</h2>
@@ -160,7 +171,7 @@
       <section class="team section">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
-          <ul class="section-list">
+          <ul class="team-section-list">
             <li class="item">
               <img
                 class="image"
@@ -333,6 +344,7 @@
         </div>
       </section>
       <!-- !СUSTOMERS -->
+
       <section class="customers section">
         <div class="container">
           <h2 class="section-title">Customers</h2>
@@ -551,6 +563,27 @@
         </form>
       </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle btn-close js-close-menu">
+        <svg width="8" height="8" class="btn-close-icon">
+          <use href="./images/icons.svg#icon-x-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">Studio</a></li>
+        <li><a href="" class="link">Portfolio</a></li>
+        <li><a href="" class="link current">Contacts</a></li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
