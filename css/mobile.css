@@ -31,10 +31,6 @@
     /* text-align: center; */
   }
 
-  .section {
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
   /*    !HEADER    */
 
   /*    !HERO    */
@@ -78,68 +74,9 @@
   }
   /*    !FEATURE */
 
-  .feature-item {
-    max-width: 396px;
-  }
-  .feature-item:not(:last-child) {
-    margin-bottom: 128px;
-  }
-  /* .feature-icon {
-    width: 64px;
-    height: 64px;
-  } */
-
-  .list-title {
-    margin-bottom: 8px;
-    text-align: center;
-
-    font-size: 36px;
-    line-height: calc(40 / 36);
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: var(--prime-text);
-  }
-
-  /* .section {
-    padding-top: 96px;
-    padding-bottom: 0;
-  } */
-  .feature-item {
-    max-width: 100%;
-    /* width: 396px; */
-  }
-
-  .feature-item .text {
-    /* max-width: 100%; */
-
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(24 / 16);
-    letter-spacing: 0.02em;
-  }
-
   /*    !WHAT WE DO    */
 
-  .whatwedo {
-    display: none;
-  }
-
   /*     !OUR TEAM */
-
-  .team-section-list {
-    padding-right: 82px;
-    padding-left: 82px;
-  }
-  .section-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 40px;
-    /* identical to box height, or 111% */
-    margin-bottom: 72px;
-
-    text-align: center;
-    letter-spacing: 0.02em;
-  }
 
   .team-section-list .item {
     margin-bottom: 72px;

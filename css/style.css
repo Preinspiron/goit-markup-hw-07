@@ -62,13 +62,20 @@ img {
 .image {
   display: block;
 }
+
 .container {
-  /* width: 1158px; */
+  max-width: 479px;
   /* margin-right: auto; */
   /* margin-left: auto; */
-  padding-right: 0;
-  padding-left: 0;
+  padding-right: 16px;
+  padding-left: 16px;
+  /* text-align: center; */
 }
+.section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
 /*    !HEADER */
 .header .list,
 .header .contacts {
@@ -176,15 +183,56 @@ img {
   display: none;
 }
 .section-list {
-  display: block;
-  /* margin-bottom: 128px; */
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  /* column-gap: 24px; */
+  /* padding-top: 96px; */
+  /* padding-bottom: 96px; */
+}
+
+.feature-item {
+  max-width: 396px;
+}
+
+/* .feature-icon {
+    width: 64px;
+    height: 64px;
+  } */
+
+.list-title {
+  margin-bottom: 8px;
+  text-align: center;
+
+  font-size: 36px;
+  line-height: calc(40 / 36);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--prime-text);
+}
+
+/* .section {
+    padding-top: 96px;
+    padding-bottom: 0;
+  } */
+.feature-item {
   max-width: 100%;
-  /* min-width: 396px; */
-  padding-top: 96px;
-  padding-bottom: 96px;
+  /* width: 396px; */
+}
+
+.feature-item .text {
+  /* max-width: 100%; */
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.02em;
 }
 
 /*    !WHAT WE DO */
+.whatwedo {
+  display: none;
+}
 
 /*  ! OUR TEAM */
 
@@ -200,6 +248,13 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+}
+.team-section-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 82px;
+  padding-left: 82px;
+  row-gap: 72px;
 }
 
 .team-title {
@@ -298,6 +353,16 @@ img {
 
 .customers.section {
   padding-top: 130px;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  /* identical to box height, or 111% */
+  margin-bottom: 72px;
+
+  text-align: center;
+  letter-spacing: 0.02em;
 }
 .customers-list {
   display: flex;

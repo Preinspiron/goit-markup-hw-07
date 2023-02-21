@@ -313,6 +313,7 @@
     padding-top: 130px;
   }
   .customers-list {
+    width: 552px;
     display: flex;
     gap: 24px;
   }
