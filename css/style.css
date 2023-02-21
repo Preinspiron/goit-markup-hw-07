@@ -84,9 +84,11 @@ img {
 /*    !HERO */
 
 .hero {
-  max-width: 428px;
+  max-width: 100%;
   /* width:; */
   height: auto;
+  padding-top: 112px;
+  padding-bottom: 112px;
 
   /* padding-top: 112px; */
   /* padding-bottom: 112px; */
@@ -102,6 +104,20 @@ img {
   background-size: cover;
   background-color: var(--prime-text);
   text-align: center;
+}
+.hero-title {
+  width: 320px;
+  /* margin-right: 0; */
+  /* margin-left: 0; */
+  margin-bottom: 72px;
+  padding: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 36px;
+  line-height: calc(40 / 36);
+  text-transform: capitalize;
 }
 
 .button {
@@ -154,6 +170,18 @@ img {
 
 .hero-title {
   color: var(--background-prime);
+}
+/* !FEATURES */
+.feature-thumb {
+  display: none;
+}
+.section-list {
+  display: block;
+  /* margin-bottom: 128px; */
+  max-width: 100%;
+  /* min-width: 396px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 /*    !WHAT WE DO */
@@ -516,7 +544,7 @@ img {
   top: 50%;
   left: 50%;
 
-  width: 408px;
+  width: 424px;
   height: 584px;
   margin-left: auto;
   margin-right: auto;
@@ -713,7 +741,17 @@ img {
   font-weight: 500;
 }
 
-/*    !BACK DROP */
+/* !BACKDROP */
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(46, 47, 66, 0.4);
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .is-hidden {
   opacity: 0;
   visibility: hidden;

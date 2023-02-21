@@ -112,8 +112,50 @@
       display: none;
     }
   }
+  /* !UTILS */
+  .container {
+    max-width: 1119px;
+  }
 
   /* !HEADER */
   /* !HERO */
-  /*  */
+  .hero {
+    padding-bottom: 80px;
+  }
+  .hero-title {
+    margin-bottom: 40px;
+  }
+  /*   !FEATURES */
+  /* .feature-thumb {
+    display: block;
+
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+    padding: 24px 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+
+    background-color: var(--background-sec-cloud);
+    text-align: center;
+  } */
+
+  /* .feature-icon {
+    width: 64px;
+    height: 64px;
+  } */
+  /* .section-list {
+    display: block;
+    margin-bottom: 128px;
+    max-width: 100%;
+    min-width: 396px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+  } */
+}
+.feature-item {
+  /* width: 264px; */
 }
