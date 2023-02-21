@@ -837,4 +837,12 @@
   .button.modal-button {
     font-weight: 500;
   }
+  /* !TEAM */
+  .team-section-list {
+    display: flex;
+    gap: 24px;
+  }
+  .team-section-list .item {
+    width: 364px;
+  }
 }
