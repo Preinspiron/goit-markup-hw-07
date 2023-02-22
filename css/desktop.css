@@ -1,6 +1,7 @@
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
+    margin: auto;
   }
 
   .container-tab {
@@ -248,10 +249,16 @@
   }
 
   .section {
+    /* margin: auto; */
+    /* margin: 0 auto; */
     padding-top: 120px;
     padding-bottom: 120px;
   }
   .section-list.feature {
+    margin: auto;
+    /* width: 100%; */
+    /* max-width: 1158px; */
+    /* margin: 0 auto; */
     padding-right: 156px;
     padding-left: 156px;
   }
