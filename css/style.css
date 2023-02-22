@@ -112,12 +112,23 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/index_page/hero-img.jpg);
+    url(../images/index_page/mobile/hero-img-mob-1x.jpg);
 
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--prime-text);
   text-align: center;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/index_page/mobile/hero-img-mob-2x.jpg);
+  }
 }
 .hero-title {
   width: 320px;

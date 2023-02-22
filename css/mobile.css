@@ -47,11 +47,6 @@
     /* padding-left: 54px; */
 
     /* margin: 0 auto; */
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/index_page/hero-img.jpg);
 
     background-repeat: no-repeat;
     background-size: cover;
