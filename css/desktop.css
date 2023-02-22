@@ -90,6 +90,7 @@
   .contacts .link {
     color: var(--secondary-text);
     font-weight: 400;
+    font-size: 16px;
   }
   .current {
     position: relative;
@@ -400,6 +401,7 @@
     border-top: none;
   }
   .portfolio-cards {
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
   }
