@@ -609,6 +609,7 @@ img {
   /* top: 50%; */
   /* transform: translateY(-50%); */
   /* right: 24px; */
+  margin-left: 16px;
 }
 
 .subcribe-btn:hover {
