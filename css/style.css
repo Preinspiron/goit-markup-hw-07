@@ -131,7 +131,8 @@ img {
   }
 }
 .hero-title {
-  width: 320px;
+  width: 100%;
+  max-width: 479px;
   margin-bottom: 72px;
   padding: 0;
   display: block;
@@ -393,7 +394,7 @@ img {
 }
 
 .customers-item {
-  width: 190px;
+  width: calc((100% - 16px) / 2);
 }
 .customers-link {
   display: block;
@@ -402,7 +403,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 169px;
+  width: 100%;
   height: 88px;
   transition: border-color 250ms;
   transition-timing-function: var(--cubic-bazier);
@@ -571,7 +572,8 @@ img {
   margin-bottom: 16px;
 }
 .footer .email-input {
-  width: 398px;
+  width: 100%;
+  max-width: 398px;
   padding: 8px 16px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -628,7 +630,8 @@ img {
   top: 50%;
   left: 50%;
 
-  width: 392px;
+  width: 100%;
+  max-width: 392px;
   height: 584px;
   margin-left: auto;
   margin-right: auto;
@@ -902,7 +905,7 @@ img {
 .mobile-menu-contacts .link {
   margin-bottom: 40px;
   font-weight: 600;
-  font-size: 36px;
+  font-size: 23px;
   line-height: 40px;
 
   text-transform: capitalize;
@@ -912,16 +915,16 @@ img {
 .mobile-menu-contacts .link-email {
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 24px;
-
+  text-decoration: none;
   letter-spacing: 0.02em;
   color: #434455;
   margin-bottom: 48px;
   display: block;
 }
 .mobile-menu-contacts .social-list {
-  gap: 56px;
+  gap: 40px;
   justify-content: flex-start;
 }
 .page-header .container {
