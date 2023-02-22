@@ -206,14 +206,16 @@
     border-radius: 4px;
 
     background-color: var(--background-sec-cloud);
-    text-align: center;
+    /* text-align: center; */
   }
   .feature-icon {
     width: 64px;
     height: 64px;
   }
   .section-list {
-    display: flex;
+    /* display: flex; 
+    */
+    flex-wrap: nowrap;
     gap: 24px;
   }
 
@@ -230,10 +232,17 @@
     padding-top: 120px;
     padding-bottom: 120px;
   }
-
+  .section-list.feature {
+    padding-right: 156px;
+    padding-left: 156px;
+  }
+  .feature-item {
+    width: 264px;
+  }
   /*   !WHAT WE DO   */
   .whatwedo.section {
     padding-top: 0;
+    display: block;
   }
   .section-title {
     margin-bottom: 72px;
@@ -249,12 +258,16 @@
   /*   !OUR TEAM   */
   .team.section {
     background-color: var(--background-sec-cloud);
+    padding-bottom: 120px;
+    max-width: 1440px;
+    margin: auto;
   }
   .team .image {
     display: block;
   }
   .team-section-list {
     display: flex;
+    flex-wrap: nowrap;
     gap: 24px;
   }
   .team-section-list .item {
@@ -314,8 +327,8 @@
   }
   .customers-list {
     width: 552px;
-    display: flex;
     gap: 24px;
+    flex-wrap: nowrap;
   }
 
   .customers-link {
@@ -346,6 +359,9 @@
   .customers-link:hover .customers-icon,
   .customers-link:focus .customers-icon {
     fill: var(--hover-link-ocean);
+  }
+  .customers-item {
+    width: 168px;
   }
   /*   !PORTFOLIO */
 
@@ -439,11 +455,23 @@
     font-weight: 500;
   }
   /*   !FOOTER   */
-
+  .footer {
+    max-width: 1440px;
+    margin: auto;
+  }
+  .footer-logo {
+    text-align: left;
+    width: 264px;
+    display: inline-block;
+  }
   .footer .container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
     /* gap: 120px; */
     text-align: left;
+    gap: 0;
   }
 
   .footer {
@@ -480,7 +508,8 @@
   }
 
   .footer-social {
-    /* width: 208px; */
+    display: inline-block;
+    width: 208px;
     margin-left: 120px;
   }
 
@@ -520,6 +549,7 @@
   }
 
   .footer-subcribe {
+    display: inline-block;
     margin-left: 80px;
   }
   .footer-input-feild {
@@ -528,6 +558,7 @@
   }
   .footer-form {
     display: inline-flex;
+    gap: 0;
   }
   .footer-label {
     display: inline-block;

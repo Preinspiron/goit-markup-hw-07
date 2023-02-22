@@ -59,7 +59,7 @@
     text-align: center;
   }
   .hero-title {
-    width: 320px;
+    max-width: 320px;
     /* margin-right: 0; */
     /* margin-left: 0; */
     margin-bottom: 72px;
