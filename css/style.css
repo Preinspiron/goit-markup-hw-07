@@ -1001,8 +1001,8 @@ img {
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 32px;
-  right: 0px;
+  top: 16px;
+  right: 16px;
   color: black;
 }
 

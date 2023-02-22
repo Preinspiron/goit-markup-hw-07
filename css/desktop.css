@@ -55,6 +55,7 @@
 
   /*   !HEADER   */
   .header {
+    max-width: 1440px;
     display: flex;
     justify-content: center;
     padding-top: 24px;
