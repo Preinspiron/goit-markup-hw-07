@@ -127,27 +127,16 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/index_page/decs/hero-img-decs-1x.jpg);
+      url(../images/index_page/hero-img.jpg);
 
     background-repeat: no-repeat;
     background-size: cover;
     background-color: var(--prime-text);
     text-align: center;
   }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/index_page/decs/hero-img-decs-2x.jpg);
-    }
-  }
+
   .hero-title {
-    max-width: 496px;
-    width: 100%;
+    width: 494px;
     margin-bottom: 48px;
     display: inline-block;
 
@@ -270,8 +259,6 @@
   .team.section {
     background-color: var(--background-sec-cloud);
     padding-bottom: 120px;
-    max-width: 1440px;
-    margin: auto;
   }
   .team .image {
     display: block;
@@ -466,10 +453,6 @@
     font-weight: 500;
   }
   /*   !FOOTER   */
-  .footer {
-    max-width: 1440px;
-    margin: auto;
-  }
   .footer-logo {
     text-align: left;
     width: 264px;
