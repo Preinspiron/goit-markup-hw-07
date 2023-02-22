@@ -257,14 +257,7 @@
     text-align: left;
     align-self: flex-start;
   }
-  .footer .container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* justify-content: space-between; */
-    column-gap: 24px;
-    padding-right: 108px;
-    padding-left: 164px;
-  }
+
   .footer-subcribe {
     text-align: left;
   }

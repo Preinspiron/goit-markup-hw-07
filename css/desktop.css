@@ -1,7 +1,9 @@
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
-    margin: auto;
+    width: 1158px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
   }
 
   .container-tab {
@@ -68,15 +70,15 @@
     padding-left: 15px;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     padding-top: 24px;
     padding-bottom: 28px;
 
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     border-bottom: 1px solid #e7e9fc;
   }
   .nav {
-    margin-right: 332px;
+    /* margin-right: 332px; */
   }
   .nav .list,
   .contacts .list {
@@ -482,7 +484,7 @@
   }
   /* !FOOTER   */
   .footer {
-    max-width: 1440px;
+    /* max-width: 1440px; */
     margin: auto;
   }
   .footer-logo {
@@ -492,13 +494,20 @@
   }
   .footer .container {
     display: flex;
+  }
+  /* .footer .container {
+    width: 1158px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     gap: 120px;
     text-align: left;
     gap: 0;
-  }
+  } */
 
   .footer {
     padding-top: 100px;
