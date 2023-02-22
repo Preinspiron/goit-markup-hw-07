@@ -929,7 +929,7 @@ img {
   display: block;
 }
 .mobile-menu-contacts .social-list {
-  gap: 40px;
+  gap: 24px;
   justify-content: flex-start;
 }
 .page-header .container {
@@ -1066,7 +1066,9 @@ img {
 
 .filter-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+
+  justify-content: flex-start;
   gap: 24px;
   margin-bottom: 72px;
 }

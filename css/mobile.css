@@ -89,4 +89,7 @@
   .modal {
     width: 392px;
   }
+  .mobile-menu-contacts .social-list {
+    gap: 54px;
+  }
 }
