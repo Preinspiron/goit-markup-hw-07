@@ -77,9 +77,7 @@
     /* justify-content: flex-start; */
     border-bottom: 1px solid #e7e9fc;
   }
-  .nav {
-    /* margin-right: 332px; */
-  }
+
   .nav .list,
   .contacts .list {
     flex-direction: row;
@@ -395,6 +393,9 @@
 
   .portfolio.section {
     padding-top: 96px;
+    /* justify-content: center; */
+    /* width: 1128px; */
+    margin: 0 auto;
   }
   .filter {
     text-align: center;
@@ -418,6 +419,8 @@
   .portfolio-cards {
     display: flex;
     flex-wrap: wrap;
+    width: 1128px;
+    gap: 0;
   }
 
   .portfolio-cards .card {
@@ -493,21 +496,11 @@
     display: inline-block;
   }
   .footer .container {
-    display: flex;
-  }
-  /* .footer .container {
-    width: 1158px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
-    gap: 120px;
-    text-align: left;
-    gap: 0;
-  } */
+    width: 1158px;
+    display: flex;
+    /* margin: auto; */
+  }
 
   .footer {
     padding-top: 100px;
@@ -539,13 +532,16 @@
   }
   .footer-social-list {
     display: flex;
-    gap: 16px;
+    /* gap: 16px; */
+    align-items: baseline;
+    justify-content: flex-start;
   }
 
   .footer-social {
-    display: inline-block;
-    width: 208px;
     margin-left: 120px;
+    /* display: inline-block; */
+    /* width: 208px; */
+    /* margin-left: 120px; */
   }
 
   .social-list {
@@ -584,6 +580,7 @@
   }
 
   .footer-subcribe {
+    text-align: left;
     display: inline-block;
     margin-left: 80px;
   }

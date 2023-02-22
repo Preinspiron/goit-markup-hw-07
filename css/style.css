@@ -428,6 +428,13 @@ img {
 
 /*    !FOOTER */
 
+.footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
+  justify-content: center;
+}
+
 .footer {
   /* max-width: 100%; */
   padding-top: 96px;
@@ -479,14 +486,15 @@ img {
 }
 
 .footer .text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
   text-align: left;
-  line-height: 1.5;
   max-width: 264px;
   color: var(--footer-text);
 
-  font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
   /* identical to box height, or 150% */
 
   letter-spacing: 0.02em;
@@ -618,14 +626,16 @@ img {
 
 /*    !MODAL */
 @media (max-width: 479px) {
-  /* Не пониял за чем это */
+  .modal {
+    width: 100%;
+  }
 }
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
 
-  width: 100%;
+  /* width: 100%; */
   /* max-width: 392px; */
   height: auto;
   margin-left: auto;
